@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>TIP CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <header>Tip Calculator</header>
+            <div class="tipBody">
+                <h3>Bill</h3>
+                <button><i class="fas fa-dollar-sign"></i></button>
+                <input type="number" id="userBill" class="userBill">
+    
+                <h3>Number Of Guest</h3>
+                <button><i class="fas fa-male"></i></button>
+                <input type="number" id="NumberOfGuest" class="NumberOfGuest">
+                
+                <label><h3>Service Quality</h3></label>
+                <select onchange="tipc(this)">
+                    <option value="" class="userServices" disabled selected>CHOOSE</option>
+                    <option value="30" class="userServices">30%-Outstanding</option>
+                    <option value="20" class="userServices">20%-Good</option>
+                    <option value="10" class="userServices">10%-Average</option>
+                    <option value="5"  class="userServices">5%-Outstanding</option>
+                </select>
+                <div class="align">
+                    <button id="btn" class="button" >Calculate</button>
+                </div>
+            </div>
+        </div>
+        <div id="ans">
+            <div id="anss"></div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

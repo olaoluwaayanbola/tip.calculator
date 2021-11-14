@@ -1,0 +1,127 @@
+body{font-family: Impact, 'Arial Narrow Bold', sans-serif; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right,#f95ce2,#2e12a7);
+}
+.container{
+    width: 70%;
+    margin:auto;
+}
+.calculator{
+    width: 52%;
+    min-height: 58vh;
+    background-color:rgb(224, 221, 221);
+    margin: auto;
+    margin-top: 17%;
+    border-radius: 5px;
+    color: rgb(24, 22, 22);
+    margin-bottom: 30px;
+}
+.calculator header{
+    padding:3% 0 3% 0;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.tipBody{
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+}
+button{
+    height: 4.8vh;
+    width:36px;
+    padding-top: 1%;
+}
+.tipBody input{
+    margin: 3.5% 0 3.5% 0;
+    width:85%;
+    height: 3.5vh;
+    font-size: 15px;
+}
+select{
+    margin: 3.5% 0 3.5% 0;
+    width:99%;
+    height: 5vh;
+}
+.tipBody h3{
+    font-weight: bold;
+    font-size:16px;
+}
+.button{
+    width: 70px;
+    height:5vh;    
+}
+.align{
+    width:100%;
+    text-align: center;
+}
+#ans{
+    text-align: center;
+    min-width:12%;
+    max-width: 20%;
+    background-color: rgba(0, 128, 0, 0.678);
+    color: rgb(255, 255, 255);
+    margin:auto;
+    height: 20px;
+    border-radius: 3px;
+    font-size:17px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    display: none;
+    position: relative;
+    animation: mymove 0.8s ease-in-out,fadeout 0.6s 0.8s;
+}
+@keyframes mymove {
+    0%   {
+        right:50px;
+        opacity: 0;
+    }
+    100% {
+        right:0px;
+        opacity: 1;
+    }
+  }
+/*   @keyframes fadeout {
+    0%   {
+        right:50px;
+        opacity: 1;
+    }
+    100% {
+        right:0px;
+        opacity: 0;
+    }
+  } */
+@media screen and (max-width: 1074px) {
+    .calculator{width: 100%;}
+}
+@media screen and (max-width: 830px){
+    .tipBody input{width:75%}
+    select{width:90%;}
+}
+@media screen and (max-width: 250px){
+    .tipBody input{width:65%;}
+    button{width: 20%;}
+}
